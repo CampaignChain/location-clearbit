@@ -1,0 +1,35 @@
+{
+    "name": "campaignchain/location-clearbit",
+    "description": "Clearbit Location",
+    "keywords": ["campaignchain"],
+    "type": "campaignchain-location",
+    "license": "Apache-2.0",
+    "homepage": "http://www.campaignchain.com",
+    "authors": [
+        {
+            "name": "CampaignChain, Inc.",
+            "email": "info@campaignchain.com"
+        }
+    ],
+    "require": {
+        "campaignchain/channel-clearbit": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "CampaignChain\\Location\\ClearbitBundle\\": "" }
+    },
+    "extra": {
+        "campaignchain": {
+            "kernel": {
+                "classes": [
+                    "CampaignChain\\Location\\ClearbitBundle\\CampaignChainLocationClearbitBundle"
+                ],
+                "routing":
+                {
+                    "name": "campaignchain_location_clearbit",
+                    "resource": "@CampaignChainLocationClearbitBundle/Resources/config/routing.yml",
+                    "prefix": "/"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+modules:
+    campaignchain-clearbit-api:
+        display_name: Clearbit Location
+        description: Clearbit Location
+        channels:
+            - campaignchain/channel-clearbit/campaignchain-clearbit
+        hooks:
+            default:
